@@ -1,0 +1,13 @@
+import time
+
+print("Welcome to Time Tracker!")
+start_time = time.time()
+
+while True:
+    user_input = input("\nType 'stop' to stop tracking time: ")
+    if user_input.lower() == "stop":
+        end_time = time.time()
+        break
+
+elapsed_time = end_time - start_time
+print(f"\nElapsed time: {elapsed_time:.2f} seconds")
